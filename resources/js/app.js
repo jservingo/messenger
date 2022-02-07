@@ -19,7 +19,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('contact', require('./components/Contact.vue').default);
+Vue.component('contact-list', require('./components/ContactList.vue').default);
+Vue.component('active-conversation', require('./components/ActiveConversation.vue').default);
+Vue.component('message-conversation', require('./components/MessageConversation.vue').default);
 
 const app = new Vue({
   el: '#app',
